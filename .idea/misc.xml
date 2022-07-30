@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91701/watch_store/app/src/main/res/drawable/amaze_fit_bg.xml" value="0.1835" />
+        <entry key="..\:/Users/91701/watch_store/app/src/main/res/drawable/apple_watch_bg.xml" value="0.1835" />
+        <entry key="..\:/Users/91701/watch_store/app/src/main/res/drawable/mi_watch_bg.xml" value="0.1835" />
+        <entry key="..\:/Users/91701/watch_store/app/src/main/res/drawable/samsung_watch_bg.xml" value="0.1835" />
         <entry key="..\:/Users/91701/watch_store/app/src/main/res/drawable/searchbg.xml" value="0.1835" />
-        <entry key="..\:/Users/91701/watch_store/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/91701/watch_store/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
     </option>
   </component>
