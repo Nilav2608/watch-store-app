@@ -11,10 +11,10 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_gravity="center"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         android:layout_weight="0"
         app:layout_constraintEnd_toStartOf="@+id/editText"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu_icon" />
@@ -23,13 +23,13 @@
         android:id="@+id/editText"
         android:layout_width="246dp"
         android:layout_height="48dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
-        android:paddingLeft="20dp"
+        android:background="@drawable/searchbg"
         android:fontFamily="@font/raleway_medium"
         android:hint="Search Product"
+        android:paddingLeft="20dp"
         android:textAlignment="center"
-        android:background="@drawable/searchbg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -62,11 +62,12 @@
 
     </TextView>
 
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -139,14 +140,13 @@
 
     </HorizontalScrollView>
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/CardView1"
         android:layout_width="157dp"
         android:layout_height="213dp"
         android:layout_marginStart="28dp"
         app:cardCornerRadius="20dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
@@ -164,9 +164,8 @@
                 app:layout_constraintHorizontal_bias="0.4"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/apple"
-                tools:layout_editor_absoluteY="5dp"
-                tools:ignore="MissingConstraints">
-            </ImageView>
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="5dp"></ImageView>
 
             <TextView
                 android:id="@+id/textApple"
@@ -217,14 +216,15 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="157dp"
         android:layout_height="213dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="30dp"
         android:elevation="5dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/CardView1"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" >
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -290,11 +290,181 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView3"
+        android:layout_width="157dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CardView1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageMiWatch"
+                android:layout_width="152dp"
+                android:layout_height="119dp"
+                android:background="@drawable/mi_watch_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/mi_watch"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="5dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textMi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Mi Watch"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.275"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageMiWatch" />
+
+            <TextView
+                android:id="@+id/textViewModel3"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:text="All Series"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.134"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textMi">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textViewprice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$299"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewModel3" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView4"
+        android:layout_width="157dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toEndOf="@+id/CardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <ImageView
+                android:id="@+id/imageAmazeFitWatch"
+                android:layout_width="152dp"
+                android:layout_height="119dp"
+                android:background="@drawable/amaze_fit_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/amazefit"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="5dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textAmazeFit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Mi Watch"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.275"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAmazeFitWatch" />
+
+            <TextView
+                android:id="@+id/textViewModel4"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:text="All Series"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.134"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textAmazeFit">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textViewprice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$199"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewModel4" />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
     </androidx.cardview.widget.CardView>
 
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
